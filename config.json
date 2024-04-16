@@ -398,7 +398,7 @@
   },
   "variations": [
     {
-      "name": "Light",
+      "name": "light",
       "id": "light",
       "meta": {
         "desktop_screenshot": "desktop_light.png",
