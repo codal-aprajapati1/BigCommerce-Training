@@ -1,0 +1,20 @@
+<a href="{{urls.home}}" class="header-logo__link" data-header-logo-link>
+    {{#if settings.store_logo.image}}
+        {{#if theme_settings.logo_size '===' 'original'}}
+        <img class="header-logo-image-unknown-size"
+             src="{{cdn 'https://images.pexels.com/photos/16039120/pexels-photo-16039120/free-photo-of-sunlit-rocks-on-sea-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}}"
+             alt="{{settings.store_logo.title}}"
+             title="{{settings.store_logo.title}}"> Hello
+        {{else}}
+        <div class="header-logo-image-container">
+            <img class="header-logo-image"
+                 src="{{getImage settings.store_logo.image 'logo_size'}}"
+                 srcset="{{getImageSrcset1x2x settings.store_logo.image theme_settings.logo_size}}"
+                 alt="{{settings.store_logo.title}}"
+                 title="{{settings.store_logo.title}}"> HElo
+        </div>
+        {{/if}}
+    {{else}}
+    <span class="header-logo-text">{{settings.store_logo.title}} Welcome </span> 
+    {{/if}}
+</a>

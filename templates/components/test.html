@@ -1,0 +1,42 @@
+
+<div class="above-header-html">
+    {{ assignVar "abc" 100 }}
+    {{ assignVar "YourName" "Welcome to Bigcommerce Traning Session" }}
+    {{ assignVar "array" "[1,2,3,4,5,6]"}}
+    <h1>Hello Practice</h1>
+    {{#for 1 5}}
+        <p>Lorem, ipsum dolor.</p>
+    {{/for}}
+    <img src="{{cdn 'webdav:images/img2.jpg'}}" alt="certified">
+
+    <span>{{ getVar "abc" }}</span>
+    <!-- {{ getVar "YourName"}} -->
+    {{#for 1 5 }}
+        {{#if abc '==' 100 }}
+            <strong>{{ getVar "abc" }}</strong>
+        {{else}}
+            {{ getVar "YourName"}}
+        {{/if}} 
+    {{/for}}
+    <br>
+    {{ concat "abc" "YourName" }}
+
+    {{#or 0 0 0 0 0 0 1}}
+        {{ getVar "abc" }}
+    {{/or}}
+
+    {{money 1000 2 ',' '.'}}
+    <div>
+    {{ assignVar "address" "A/15 Thaltej ahmedabad Gujarat"}}
+    {{ nl2br "address is 
+    In ahmedabad" }}
+        <div>
+
+            {{#JSONparse '{"foo": "bar"}'}}
+                {{foo}}
+            {{/JSONparse}}
+        </div>
+
+</div>
+</div>
+
