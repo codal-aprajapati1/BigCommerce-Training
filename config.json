@@ -1,5 +1,5 @@
 {
-  "name": "stencil push deploy",
+  "name": "stencil cart Api",
   "version": "6.13.0",
   "template_engine": "handlebars_v4",
   "meta": {
